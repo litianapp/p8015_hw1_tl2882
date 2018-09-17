@@ -70,3 +70,19 @@ as.numeric(as.character(df$vec_factor))
 First, ten factors are converted to ten individual characters literally.
 
 Then, it shows that the letters in "characater" type can't be converted to numerics.
+
+# Problem 2
+
+## Create a data frame
+
+```{r}
+set.seed(1)
+
+df2 = tibble(
+  x = rnorm(1000),
+  y = rnorm(1000),
+  vec_logical = (x + y) > 0,
+  vec_num = as.numeric(vec_logical),
+  vec_factor = as.factor(vec_logical)
+)
+```
