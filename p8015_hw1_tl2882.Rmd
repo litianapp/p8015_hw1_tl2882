@@ -107,3 +107,6 @@ scatter_plot2
 scatter_plot3 = ggplot(df2, aes(x = df2$x, y = df2$y, color = df2$vec_factor)) + geom_point()
 scatter_plot3
 ```
+
+comment on the color scales:  
+all the boundaries between two colors in three plots are the line: y = -x
