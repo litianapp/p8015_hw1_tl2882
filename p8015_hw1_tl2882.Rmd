@@ -37,3 +37,17 @@ mean(df$vec_factor)
 3.Fail: only numeric or logical vector can calculate the mean  
 4.Fail: only numeric or logical vector can calculate the mean
 
+## Convert variables
+
+### Applies the as.numeric function
+```{r}
+as.numeric(df$vec_logical)
+as.numeric(df$vec_char)
+as.numeric(df$vec_factor)
+```
+
+What happens? two warnings.
+
+1. Succeed ("ture" is converted to "1", and "false" is converted to "0")  
+2. Fail: can't be converted to numeric  
+3. Succeed : can be converted to numbers which represent their alphabetical order
