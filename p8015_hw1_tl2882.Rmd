@@ -110,3 +110,8 @@ scatter_plot3
 
 comment on the color scales:  
 all the boundaries between two colors in three plots are the line: y = -x
+
+## Save first scatterplot
+```{r}
+ggsave("first_scatterplot.pdf", plot = scatter_plot1)
+```
