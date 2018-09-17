@@ -32,9 +32,12 @@ mean(df$vec_char)
 mean(df$vec_factor)
 ```
 
-1.Succeed: normal arithmetical mean  
-2.Succeed: "ture" means "1", and "false" means "0"  
-3.Fail: only numeric or logical vector can calculate the mean  
+1.Succeed: normal arithmetical mean
+
+2.Succeed: "ture" means "1", and "false" means "0"
+
+3.Fail: only numeric or logical vector can calculate the mean
+
 4.Fail: only numeric or logical vector can calculate the mean
 
 ## Convert variables
