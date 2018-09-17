@@ -86,3 +86,11 @@ df2 = tibble(
   vec_factor = as.factor(vec_logical)
 )
 ```
+
+*The size of the dataset is (`r dim(df2)`)
+
+*The mean of x is `r mean(df2$x)`,
+the median of x is `r median(df2$x)`
+
+*The proportion of cases for which the logical vector is TURE is
+`r sum(df2$vec_logical)/length(df2$vec_logical)`
