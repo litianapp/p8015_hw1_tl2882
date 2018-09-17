@@ -94,3 +94,16 @@ the median of x is `r median(df2$x)`
 
 *The proportion of cases for which the logical vector is TURE is
 `r sum(df2$vec_logical)/length(df2$vec_logical)`
+
+## Make three scatterplots
+
+```{r}
+scatter_plot1 = ggplot(df2, aes(x = df2$x, y = df2$y, color = df2$vec_logical)) + geom_point() 
+scatter_plot1
+
+scatter_plot2 = ggplot(df2, aes(x = df2$x, y = df2$y, color = df2$vec_num)) + geom_point()
+scatter_plot2
+
+scatter_plot3 = ggplot(df2, aes(x = df2$x, y = df2$y, color = df2$vec_factor)) + geom_point()
+scatter_plot3
+```
