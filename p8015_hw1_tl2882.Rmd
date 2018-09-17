@@ -52,3 +52,21 @@ What happens? two warnings.
 2. Fail: can't be converted to numeric  
 3. Succeed : can be converted to numbers which represent their alphabetical order
 
+### Convert character variable from character to factor to numeric
+```{r}
+as.factor(df$vec_char)
+as.numeric(as.factor(df$vec_char))
+```
+First, ten individual characters are converted to ten factors.  
+(As shown in the result, these factors can be sorted acorrding alphabetical order.)
+
+Then, these factors are converted to ten numbers which represent their alphabetical order.
+
+### Convert factor variable from factor to character to numeric
+```{r}
+as.character(df$vec_factor)
+as.numeric(as.character(df$vec_factor))
+```
+First, ten factors are converted to ten individual characters literally.
+
+Then, it shows that the letters in "characater" type can't be converted to numerics.
