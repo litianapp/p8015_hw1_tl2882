@@ -5,3 +5,21 @@ date: 2018-09-14
 output:
   github_document
 ---
+
+```{r include = FALSE}
+library(tidyverse)
+```
+
+# Problem 1
+
+## Create a data frame
+```{r}
+set.seed(1)
+
+df = tibble(
+  random_sample = runif(10, min = 0, max = 5),
+  vec_logical = (random_sample > 2),
+  vec_char = c("A", "B", "C", "D", "E", "a", "b", "c", "d", "e"),
+  vec_factor = c("A", "B", "C", "D", "E", "a", "b", "c", "d", "e")
+)
+```
