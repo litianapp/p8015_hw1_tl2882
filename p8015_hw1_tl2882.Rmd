@@ -20,7 +20,7 @@ df = tibble(
   random_sample = runif(10, min = 0, max = 5),
   vec_logical = (random_sample > 2),
   vec_char = c("A", "B", "C", "D", "E", "a", "b", "c", "d", "e"),
-  vec_factor = c("A", "B", "C", "D", "E", "a", "b", "c", "d", "e")
+  vec_factor = factor(c("A", "B", "C", "D", "E", "a", "b", "c", "d", "e"))
 )
 ```
 
@@ -36,3 +36,4 @@ mean(df$vec_factor)
 2.Succeed: "ture" means "1", and "false" means "0"  
 3.Fail: only numeric or logical vector can calculate the mean  
 4.Fail: only numeric or logical vector can calculate the mean
+
