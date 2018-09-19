@@ -43,13 +43,13 @@ mean(df$vec_factor)
 ## Convert variables
 
 ### Applies the as.numeric function
-```{r eval = FALSE}
+```{r results = 'hide'}
 as.numeric(df$vec_logical)
 as.numeric(df$vec_char)
 as.numeric(df$vec_factor)
 ```
 
-What happens? two warnings.
+What happens? Two success, one warning.
 
 1. Succeed ("ture" is converted to "1", and "false" is converted to "0")  
 2. Fail: can't be converted to numeric  
